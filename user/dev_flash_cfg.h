@@ -26,10 +26,6 @@
 #define LOG_LEVEL_SAVE_FLASH_ADDR        (FLASH_BASE + FLASH_SIZE - PAGE_SIZE / 2)
 #endif
 
-#define CALIB_PARAM_ADDR                  LAST0_PAGE
-#define CALIB_PARAM_SAVED_FLAG_ADDR       (LAST0_PAGE + sizeof(g_asCalibParam))
-#define CALIB_PARAM_SAVED_FLAG            0xAA55
-
 
 #define IAP_BOOT_SIZE            (1024 * 16)
 

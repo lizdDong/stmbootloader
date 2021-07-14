@@ -19,6 +19,7 @@ static uint16_t FlashTemp[PAGE_SIZE / 2]; //Up to 2K bytes
 /**
  ****************************************************************************
  * @brief  There is no check writing.
+ * @author lizdDong
  * @note   This function can be used for all STM32F10x devices.
  * @param  writeAddr: The starting address to be written.
  * @param  pBuffer: The pointer to the data.
@@ -45,6 +46,7 @@ static FLASH_Status dev_flashWriteNoCheck(uint32_t writeAddr, uint16_t *pBuffer,
 /**
  ****************************************************************************
  * @brief  Write data from the specified address to the specified length.
+ * @author lizdDong
  * @note   This function can be used for all STM32F10x devices.
  * @param  addr: The starting address to be written.(The address must be a multiple of two)
  * @param  pBuff: The pointer to the data.
@@ -188,6 +190,7 @@ uint32_t dev_flashWrite(uint32_t addr, const uint8_t *pBuff, uint32_t size)
 /**
  ****************************************************************************
  * @brief  Start reading the specified data from the specified address.
+ * @author lizdDong
  * @note   This function can be used for all STM32F10x devices.
  * @param  readAddr: Start addr
  * @param  pBuff: The pointer to the data.
